@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    padding: 20px;
+    width: 800px; /* Встановлюємо максимальну ширину */
+    margin: 0 auto; /* Центруємо контент */
+}
+
+/* Адаптивний дизайн для мобільних пристроїв */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #toggleMenu {
+        display: block;
+    }
+    nav.active {
+        display: block;
+    }
+}
